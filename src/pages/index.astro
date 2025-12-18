@@ -52,16 +52,16 @@
     <!-- PDF Viewer -->
     <iframe id="pdfViewer" src="/Archivos/DocTest1.pdf"></iframe>
 
-    <script>
-      function showPDF(file, element) {
-        document.getElementById("pdfViewer").src = "/Archivos/" + file;
+    <script is:inline>
+  function showPDF(file, elem) {
+    document.getElementById("pdfViewer").src = "/Archivos/" + file;
 
-        document.querySelectorAll(".tab").forEach(tab => {
-          tab.classList.remove("active");
-        });
+    document.querySelectorAll(".tab").forEach(tab => {
+      tab.classList.remove("active");
+    });
 
-        element.classList.add("active");
-      }
-    </script>
+    elem.classList.add("active");
+  }
+</script>
   </body>
 </html>
