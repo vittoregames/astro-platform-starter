@@ -50,11 +50,11 @@
     </div>
 
     <!-- PDF Viewer -->
-    <iframe id="pdfViewer" src="/pdfs/doc1.pdf"></iframe>
+    <iframe id="pdfViewer" src="/Archivos/DocTest1.pdf"></iframe>
 
     <script>
       function showPDF(file, element) {
-        document.getElementById("pdfViewer").src = "/pdfs/" + file;
+        document.getElementById("pdfViewer").src = "/Archivos/" + file;
 
         document.querySelectorAll(".tab").forEach(tab => {
           tab.classList.remove("active");
